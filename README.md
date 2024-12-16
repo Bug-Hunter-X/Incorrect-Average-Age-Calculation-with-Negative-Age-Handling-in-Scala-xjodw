@@ -1,0 +1,5 @@
+This repository contains a Scala program that calculates the average age of a list of people. The program demonstrates an uncommon error in handling exceptions when calculating the average age, specifically when dealing with negative ages.
+
+The `bug.scala` file shows the original code with the error, where the average age calculation does not correctly handle potential `IllegalArgumentException` when an age is negative. The `bugSolution.scala` file provides the corrected version, demonstrating proper exception handling and average age calculation.
+
+This example highlights a common pitfall when combining exception handling (using `Try`) with aggregate functions like `sum` in Scala.  Improper handling can lead to unexpected results or runtime errors. The solution demonstrates a robust way to handle potential exceptions and calculate the correct average age, even when negative ages are present.
